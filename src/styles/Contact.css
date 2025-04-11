@@ -1,0 +1,133 @@
+.contact-section {
+    background-color: #f5f6fa;
+    padding: 4rem 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .contact-subtitle {
+    color: #970747;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Cormorant', serif;
+    margin-bottom: 0.2rem;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+  
+  .contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact-card {
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 2rem;
+    flex: 1 1 250px;
+    max-width: 280px;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-card h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .contact-card p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+  }
+
+  .form-columns {
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  .form-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-left input {
+    padding: 1rem;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .form-right {
+    flex: 1;
+  }
+  
+  .form-right textarea {
+    height: 60%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    font-family: inherit;
+    font-size: 1rem;
+    min-height: 160px;
+    resize: none;
+  }
+  
+  .submit-btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .send-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #970747;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid #970747;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .send-btn:hover {
+    background-color: #970747;
+    color: white;
+  }
+  

@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #970747;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* existing style, no change */
+.nav-left a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-left a:hover {
+  color: black;
+}
+
+/* existing style, no change */
+.my-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* ✅ ADD THIS: Hamburger menu (hidden on desktop) */
+.hamburger {
+  display: block;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+/* ✅ ADD THIS: Oval background box for name */
+.my-name-box {
+  background-color: white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+}
+
+/* ✅ ADD THIS: Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #970747;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.initials-circle {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hide nav links on small screens if needed */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #970747;
+    padding: 1rem;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+}
+
+

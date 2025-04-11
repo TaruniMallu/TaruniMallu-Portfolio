@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Intro from './components/Intro'; 
+import Services from './components/Services'; 
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import './App.css'; // <-- add dark mode styles here
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   <Navbar />
+
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="about">
+        <Intro />
+      </section>
+
+      <section id="skills">
+        <Services />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+    </>
   );
 }
 

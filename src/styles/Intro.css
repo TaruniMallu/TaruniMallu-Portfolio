@@ -1,0 +1,143 @@
+.intro-section {
+    background-color: white;
+    color: black;
+    padding: 4rem 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .intro-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #970747;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    font-family: 'Cormorant', serif;
+  }
+  
+  .intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+  
+  .intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .intro-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    border: 3px solid #970747;
+  }
+  
+  .intro-text {
+    flex: 1;
+    max-width: 600px;
+    font-weight: bold;
+    margin-left: -1.5rem;
+  }
+  
+  /* .section-heading {
+    text-transform: uppercase;
+    color: #970747;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: 0.1rem;
+  } */
+  
+  .section-title {
+    color: #970747;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .intro-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .intro-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #970747;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid #970747;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .intro-btn:hover {
+    background-color: #970747;
+    color: white;
+  }
+
+  .tabs-section {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .tab-buttons button {
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #970747;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #970747;
+    font-family: inherit; /* optional if you want to inherit the same font */
+    transition: background 0.3s ease, color 0.3s ease;
+  }  
+  
+  .tab-buttons button:hover,
+  .tab-buttons button.active {
+    background-color: #970747;
+    color: white;
+  }
+  
+  .tab-content {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

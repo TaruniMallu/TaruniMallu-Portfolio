@@ -1,0 +1,109 @@
+.skills-section {
+    padding: 1rem 2rem 0rem;
+    margin-bottom: 0rem;
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+  }
+
+  .skills-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: #970747;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }  
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .skill-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .percent {
+    color: black;
+  }
+  
+  .bar {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 14px;
+  }
+  
+  .fill {
+    height: 100%;
+    background: linear-gradient(to right, #00bfff, #ff4b91);
+    border-radius: 10px;
+    animation: fillAnim 1.8s ease-in-out;
+  }
+  
+  @keyframes fillAnim {
+    from {
+      width: 0%;
+    }
+    to {
+      /* ends at inline width */
+    }
+  }
+
+  .soft-skills-section {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .soft-skills-heading {
+    font-size: 2.5rem;
+    color: #970747;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Cormorant', serif;
+  }
+  
+  .soft-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .soft-skill {
+    background-color: #f8f8f8;
+    border: 2px solid #970747;
+    color: black;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* .soft-skill:hover {
+    background-color: #970747;
+    color: white;
+    cursor: default;
+  } */
+  
+  

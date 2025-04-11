@@ -1,0 +1,278 @@
+.projects-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.projects-subtitle {
+  color: #970747;
+  font-size: 3rem;
+  font-weight: 700;
+  /* margin-top: 8rem; */
+  margin-bottom: 0.2rem;
+  letter-spacing: 1px;
+  font-family: 'Cormorant', serif;
+}
+
+.projects-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.filter-buttons {
+  margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: #970747;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 2px solid #970747;
+  margin: 0.4rem;
+  cursor: pointer;
+  font-family: inherit; 
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: #970747;
+  color: white;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;  /* Limit total width */
+  margin: 0 auto;     /* Center the grid */
+  padding: 0 1rem;    /* Small horizontal padding */
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  height: 140px; /* reduce this from 180px */
+  object-fit: cover;
+}
+
+
+.project-card h3 {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.view-project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(151, 7, 71, 0.7);  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.view-project-btn {
+  padding: 0.75rem 1.8rem;   /* Increased padding */
+  font-size: 1rem;           /* Slightly bigger font */
+  background-color: white;
+  color: #970747;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.view-project-btn:hover {
+  background-color: #970747;
+  color: white;
+}
+
+/* Show overlay on hover */
+.project-card:hover .view-project-overlay {
+  opacity: 1;
+}
+
+/* Slight zoom on hover */
+.project-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  color: black;
+}
+
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  font-family: Montserrat, sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slideshow-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.slideshow-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.arrow {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.modal-tech {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.modal-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #970747;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+.modal-image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 350px; /* set your preferred height */
+  width: 100%;   /* or a fixed width like 500px */
+  overflow: hidden;
+}
+
+.modal-slide-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+
+.slideshow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.slideshow-image-wrapper {
+  width: 500px;   /* You can adjust this */
+  height: 350px;  /* You can adjust this */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+

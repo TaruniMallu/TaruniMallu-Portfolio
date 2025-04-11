@@ -1,0 +1,118 @@
+/* Hero.css */
+.hero-section {
+  background-color: white;
+  color: white;
+  padding: 4rem 2rem; /* reduced padding */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  top: -100px; /* move everything up */
+  margin-bottom: 0rem;
+}
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 6.5rem;
+    gap: 2rem;
+  }
+  
+  .hero-text {
+    flex: 1;
+    max-width: 700px;
+  }
+  
+  .hero-text h3 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color : black;
+  }
+  
+  .hero-text .highlight {
+    color: #970747;
+  }
+  
+  .hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .hero-text button {
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #970747;
+    border: 2px solid #970747;
+    margin-top: 1rem;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(151, 7, 71, 0.2);
+  }
+  
+  .hero-text button:hover {
+    background-color: #970747;
+    color: white;
+  }  
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 8px solid #970747;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgb(255, 181, 193);
+  }
+  
+  /* Fancy headings */
+h1, h2, .hero-title {
+  font-family: 'Cormorant', serif;
+}
+
+/* Clean body text */
+body, h3, .navbar, .nav-links, .hero-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Social Icons under button */
+.social-icons {
+  margin-top: 1.5rem;
+  margin-left: 1.7rem;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+.social-icons a {
+  color: #970747;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: black;
+  transform: scale(1.2);
+}
+
