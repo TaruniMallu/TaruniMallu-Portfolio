@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/TaruniMallu-Portfolio/static/css/main.15586e53.css",
-    "main.js": "/TaruniMallu-Portfolio/static/js/main.3d4bef47.js",
+    "main.css": "/TaruniMallu-Portfolio/static/css/main.05ebbd99.css",
+    "main.js": "/TaruniMallu-Portfolio/static/js/main.17303e9a.js",
     "static/media/face_mask.png": "/TaruniMallu-Portfolio/static/media/face_mask.5b36da16269aa67f122d.png",
     "static/media/Train_Management3.png": "/TaruniMallu-Portfolio/static/media/Train_Management3.5dd4ccfde09c7fd4dcfb.png",
     "static/media/Image_class.png": "/TaruniMallu-Portfolio/static/media/Image_class.5f77c87bbdd3b1fe3bcb.png",
+    "static/media/hero.jpeg": "/TaruniMallu-Portfolio/static/media/hero.dbc4add3bb9d1cc19804.jpeg",
+    "static/media/about.jpeg": "/TaruniMallu-Portfolio/static/media/about.f2a3c3cdeb3bcb12f644.jpeg",
     "static/media/Train_Management.png": "/TaruniMallu-Portfolio/static/media/Train_Management.e7fcca446106ae9150e4.png",
-    "static/media/me.jpeg": "/TaruniMallu-Portfolio/static/media/me.6284ac068357c337e3b5.jpeg",
-    "static/media/photo.jpeg": "/TaruniMallu-Portfolio/static/media/photo.6284ac068357c337e3b5.jpeg",
     "static/media/nvidia.png": "/TaruniMallu-Portfolio/static/media/nvidia.903a553fb3d1506d2a45.png",
     "static/media/column_shelf_life.jpeg": "/TaruniMallu-Portfolio/static/media/column_shelf_life.d03585187bc90de51573.jpeg",
-    "static/media/calc.png": "/TaruniMallu-Portfolio/static/media/calc.384c73a7dcf7c8ebc436.png",
     "static/media/column_shelf_life2.jpeg": "/TaruniMallu-Portfolio/static/media/column_shelf_life2.4dfdf887587857947320.jpeg",
     "static/media/timetable.jpeg": "/TaruniMallu-Portfolio/static/media/timetable.214dd84ddaf12eaa16ff.jpeg",
     "static/media/column_shelf_life3.jpeg": "/TaruniMallu-Portfolio/static/media/column_shelf_life3.eb7effab5fd1069619bc.jpeg",
@@ -20,11 +19,11 @@
     "static/media/Train_Management2.jpeg": "/TaruniMallu-Portfolio/static/media/Train_Management2.a8ddfc7bc465388ea251.jpeg",
     "static/media/timetable3.jpeg": "/TaruniMallu-Portfolio/static/media/timetable3.7ffe0caaa91e789fa8ee.jpeg",
     "index.html": "/TaruniMallu-Portfolio/index.html",
-    "main.15586e53.css.map": "/TaruniMallu-Portfolio/static/css/main.15586e53.css.map",
-    "main.3d4bef47.js.map": "/TaruniMallu-Portfolio/static/js/main.3d4bef47.js.map"
+    "main.05ebbd99.css.map": "/TaruniMallu-Portfolio/static/css/main.05ebbd99.css.map",
+    "main.17303e9a.js.map": "/TaruniMallu-Portfolio/static/js/main.17303e9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.15586e53.css",
-    "static/js/main.3d4bef47.js"
+    "static/css/main.05ebbd99.css",
+    "static/js/main.17303e9a.js"
   ]
 }
