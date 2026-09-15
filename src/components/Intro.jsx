@@ -1,11 +1,11 @@
 // src/components/Intro.jsx
 import React, { useState } from 'react';
 import '../styles/Intro.css';
-import myImage from '../assets/photo.jpeg';
+import myImage from '../assets/about.jpeg';
 import Skills from './Skills';
-import Experience from './Experience'; // create this component
-import Education from './Education';   // create this component
-import Volunteering from './Volunteering'; // create this component
+import Experience from './Experience';
+import Education from './Education';
+import Volunteering from './Volunteering';
 
 const Intro = () => {
   const [activeTab, setActiveTab] = useState("skills");
@@ -14,29 +14,27 @@ const Intro = () => {
     <section id="about" className="intro-section">
       <h2 className="intro-title">ABOUT ME</h2>
       <div className="intro-container">
-        {/* Left: Image */}
         <div className="intro-image">
           <img src={myImage} alt="Taruni" />
         </div>
 
-        {/* Right: Text */}
         <div className="intro-text">
-          <p><strong>Hi! I am Taruni Mallu</strong>, a passionate learner with a strong interest in 
-            Data Science, AI, and Web Development. I enjoy solving real-world problems and collaborating 
-            with people who love tech just as much as I do.</p>
-          <p>★ I love working on challenging projects and learning new things as I go.</p>
-          <p>★ Currently skilled in Python, C++, JavaScript, React, and ML libraries like Pandas, NumPy, and Scikit-learn.</p>
-          <p>★ I'm also a huge fan of reading, blogging, and exploring design!</p>
+          <p>
+            <strong>Hi! I am Taruni Mallu</strong>, a Member of Technical Staff at Nielsen
+            building production systems across Python backends, REST APIs, and React interfaces.
+            I care about scalable architecture, data integrity, and shipping reliable features end to end.
+          </p>
+          <p>★ Full-stack focused — React, Next.js, TypeScript, JavaScript, and modern UI engineering.</p>
+          <p>★ Strong on backends &amp; data — FastAPI, ETL pipelines, distributed processing, SQL, and observability.</p>
+          <p>★ BITS Pilani Hyderabad — B.E. Civil Engineering with a Minor in Computing and Intelligence (8.3/10).</p>
 
-          {/* Buttons */}
           <div className="intro-buttons">
-            <a href="/resume.pdf" download className="intro-btn">Download CV</a>
+            <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download className="intro-btn">Download CV</a>
             <a href="#contact" className="intro-btn secondary">Hire Me</a>
           </div>
         </div>
       </div>
 
-      {/* ↓↓↓ Tabs start here ↓↓↓ */}
       <div className="tabs-section">
         <div className="tab-buttons">
           <button onClick={() => setActiveTab("skills")} className={activeTab === "skills" ? "active" : ""}>Skills</button>
